@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$states = "Mississippi Alabama Texas Massachusetts Kansas";
+$statesArray = array();
+
+// Search for a word in $states that ends in xas and store it in $statesArray[0]
+if (preg_match('/\b\w*xas\b/', $states, $matches)) {
+    $statesArray[0] = $matches[0];
+}
+
+// Search for a word in $states that begins with k and ends in s, perform a case sensitive comparison
+// and store it in $statesArray[1]
+if (preg_match('/\bK\w+s\b/', $states, $matches)) {
+    $statesArray[1] = $matches[0];
+}
+
+// Search for a word in $states that begins with M and ends with s and store it in $statesArray[2]
+if (preg_match('/\bM\w+s\b/', $states, $matches)) {
+    $statesArray[2] = $matches[0];
+}
+
+// Search for a word in $states that ends in a and store it in $statesArray[3]
+if (preg_match('/\b\w*a\b/', $states, $matches)) {
+    $statesArray[3] = $matches[0];
+}
+
+// Search for a word in $states at the beginning of the string that starts with M and store it in $statesArray[4]
+if (preg_match('/\bM\w*/', $states, $matches)) {
+    $statesArray[4] = $matches[0];
+}
+
+// Output $statesArray to the screen
+print_r($statesArray);
+?>
+
+
+</body>
+</html>

@@ -9,11 +9,19 @@
 
     
 }
-#nav-img {
+.navbar-nav{
+    font-size: larger;
+}
+#header{
+    margin: 0;
+}
+
+#nav-brand {
     padding-left: 25px;
     height: 10%;
     width: 20%;
 }
+
 .ic{
     height: 30%;
     width: 20%;
@@ -136,3 +144,39 @@
 #carousel{
     padding-top: 7%;
 }
+
+
+#explore {
+    text-align: center; /* Center the content */
+}
+
+
+#header{
+
+    padding: 0;
+}
+
+#booking{
+
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+
+    .navbar{
+        padding: 0;
+        height: 10%;
+    }
+    #explore {
+        width: 100%; /* Full width for screens below 768px */
+    }
+    
+    .explore {
+        width: 100%; /* Full width for screens below 768px */
+    }
+    
+   
+}
+
+
+

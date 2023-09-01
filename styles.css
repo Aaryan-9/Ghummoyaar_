@@ -153,14 +153,25 @@
 
 #header{
 
-    padding: 0;
+    padding: 10%;
 }
 
 #booking{
 
     padding: 0;
 }
-
+@media(max-width: 1200px){
+    .contact{
+        width: 90%;
+    }
+    #explore {
+        width: 90%; /* Full width for screens below 768px */
+    }
+    
+    .explore {
+        width: 90%; /* Full width for screens below 768px */
+    }
+}
 @media (max-width: 768px) {
 
     .navbar{
@@ -168,15 +179,22 @@
         height: 10%;
     }
     #explore {
+        margin-top: 17%;
         width: 100%; /* Full width for screens below 768px */
     }
     
     .explore {
+        
         width: 100%; /* Full width for screens below 768px */
+    }
+    .contact{
+        width: 90%;
     }
     
    
 }
+
+
 
 
 
